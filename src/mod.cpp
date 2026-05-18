@@ -5,6 +5,7 @@ extern "C" {
 
 void mod_init(DuskModAPI* api) {
     dusk::init(api);
+    api->log_info("Dusklight-Online initialized.");
 }
 
 void mod_tick(DuskModAPI* api) {
