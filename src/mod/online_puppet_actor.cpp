@@ -34,8 +34,8 @@ static J3DModel* OnlinePuppetActor_CloneModel(J3DModel* source_model) {
     if (model_data == nullptr) {
         return nullptr;
     }
-
-    return mDoExt_J3DModel__create(model_data, 0x80000, 0x11000084);
+    
+    return mDoExt_J3DModel__create(model_data, 0x80000, 0x11000084 | 0x2000400);
 }
 
 static u16 OnlinePuppetActor_GetJointCount(J3DModel* model) {
